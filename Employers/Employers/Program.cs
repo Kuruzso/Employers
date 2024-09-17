@@ -18,6 +18,10 @@ namespace Employers
             {
                 tulajdonsagLista.Add(new dolgozo(sor));
             }
+            foreach (var item in tulajdonsagLista)
+            {
+                Console.WriteLine(item.nev);
+            }
         }
     }
 }
