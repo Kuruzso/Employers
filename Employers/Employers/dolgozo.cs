@@ -10,14 +10,17 @@ namespace Employers
     {
 
         public int azonosito;
-        public string név;
+        public string nev;
         public int kor;
         public int kereset;
 
-        public dolgozo() {
-        
-        
-        
+        public dolgozo(string sor) {
+
+            this.azonosito = int.Parse(sor.Split(';')[0]);
+            this.nev = sor.Split(';')[1];
+            this.kor = int.Parse(sor.Split(';')[2]);
+            this.kereset = int.Parse(sor.Split(';')[3]);
+
         }
     }
 }

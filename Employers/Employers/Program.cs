@@ -13,7 +13,11 @@ namespace Employers
         static void Main(string[] args)
         {
             string[] adat = File.ReadAllLines("tulajdonsagok_100sor.txt");
-            List<string> tulajdonsagLista = new List<string>();
+            List<dolgozo> tulajdonsagLista = new List<dolgozo>();
+            foreach (var sor in adat)
+            {
+                tulajdonsagLista.Add(new dolgozo(sor));
+            }
         }
     }
 }
