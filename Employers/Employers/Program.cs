@@ -44,6 +44,16 @@ namespace Employers
                     Console.WriteLine(tulajdonsagLista[i].nev+" " + tulajdonsagLista[i].kor);
                 }
             }
+            int hanyan = 0;
+            for (int i = 0; i < tulajdonsagLista.Count; i++)
+            {
+                if (tulajdonsagLista[i].kereset > 50000)
+                {
+                    hanyan++;
+                }
+            }
+            Console.WriteLine(hanyan+"-en/an keresnek 50000 felett");
+
 
             Console.ReadLine();
 
