@@ -37,6 +37,14 @@ namespace Employers
             }
             Console.WriteLine(tulajdonsagLista[index].azonosito+" ," + tulajdonsagLista[index].nev);
 
+            for (int i = 0; i < tulajdonsagLista.Count; i++)
+            {
+                if (tulajdonsagLista[i].kor == 55)
+                {
+                    Console.WriteLine(tulajdonsagLista[i].nev+" " + tulajdonsagLista[i].kor);
+                }
+            }
+
             Console.ReadLine();
 
         }
